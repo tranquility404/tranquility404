@@ -1,73 +1,57 @@
-# Welcome to your Lovable project
+<h1 align="center">Hi, I'm Aman Verma 👨‍💻</h1>
+<p align="center">
+  Backend Developer | Full-Stack Engineer | AI Integrator
+</p>
 
-## Project info
+---
 
-**URL**: https://lovable.dev/projects/adc7da3c-626f-4e6f-8311-ae2180fd1641
+### 🚀 About Me
 
-## How can I edit this code?
+I'm a backend developer who loves transforming scrappy MVPs into clean, scalable, and production-ready systems. I specialize in:
 
-There are several ways of editing your application.
+- Designing scalable microservices and REST APIs
+- Building real-time, full-stack web apps
+- Integrating generative AI into practical systems
 
-**Use Lovable**
+With a strong foundation in Java, Spring Boot, Python, FastAPI, and React — I bring ideas to life from database to browser.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/adc7da3c-626f-4e6f-8311-ae2180fd1641) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+### 🛠️ Tech Stack
 
-**Use your preferred IDE**
+**Languages:** Java, Python, TypeScript, JavaScript  
+**Frontend:** React.js, TailwindCSS, Zustand  
+**Backend:** Spring Boot, FastAPI, Express.js, Node.js  
+**Databases:** MongoDB, PostgreSQL  
+**DevOps:** Docker, GitHub Actions, Google Cloud  
+**AI/ML:** Librosa, LLaMA 3, Tesseract, OpenAI API
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### 💼 Featured Projects
 
-Follow these steps:
+- **🔊 SpeakSmart** – Multilingual speech training platform using FastAPI, LLaMA 3, React, and Murph AI  
+- **📚 AI Ebook Reader** – Microservices-based reader with quiz and summary generation  
+- **🏠 PG Management** – Role-based accommodation system using Spring Security and MongoDB  
+- **🧠 Sorting Visualizer** – Interactive algorithm demo tool with React & DSA logic  
+- **🎬 PopcornTime** – Android movie suggestion app using TMDB API
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+> 📂 Explore all repositories to see detailed READMEs, demos, and code.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+### 🏆 Achievements
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+- 🥇 **1st Place - HackBlitz 2025** (Google Developer Groups, MMMUT)
+- 🏆 **Best Innovation Award - GIH 2.0** (Galgotias College)
+- 💻 **Top 5% - CodeClash 2025** (5500+ participants, including from IITs & NITs)
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### 📫 Let's Connect
 
-**Use GitHub Codespaces**
+- 🔗 [LinkedIn](https://www.linkedin.com/in/aman-verma403)
+- 🌐 [Portfolio](https://tranquilty404.vercel.app)
+- ✉️ amanverma404403.code@gmail.com
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/adc7da3c-626f-4e6f-8311-ae2180fd1641) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Thanks for stopping by! ⭐️ If you find something interesting, feel free to fork, star, or reach out!
