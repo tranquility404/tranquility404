@@ -51,7 +51,7 @@ With a strong foundation in Java, Spring Boot, Python, FastAPI, and React — I 
 ### 📫 Let's Connect
 
 - 🔗 [LinkedIn](https://www.linkedin.com/in/aman-verma403)
-- 🌐 [Portfolio](https://tranquilty404.vercel.app)
+- 🌐 [Portfolio](https://tranquility404.vercel.app)
 - ✉️ amanverma404403.code@gmail.com
 
 Thanks for stopping by! ⭐️ If you find something interesting, feel free to fork, star, or reach out!
