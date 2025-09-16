@@ -78,11 +78,11 @@ const Header = () => {
 
           <div className="flex flex-wrap gap-4 justify-center mb-8">
             <a
-              href="/resume.pdf"
-              download
+              href="https://drive.google.com/file/d/1upe3i49tvmwCaJIuQwHTw5EupwIiXAnW/view?usp=sharing"
+              target="_blank"
               className="inline-flex items-center px-8 py-3 rounded-full font-semibold bg-blue-600 hover:bg-blue-700 text-white transition-colors duration-200"
             >
-              Download Resume
+              View Resume
             </a>
 
             <div className="flex gap-4">
