@@ -1,49 +1,51 @@
 
+'use client';
+
 import React, { useState } from 'react';
 
 const SkillsSection = () => {
   const [selectedSkill, setSelectedSkill] = useState<number | null>(null);
- const skills = [
-  // Languages
-  { name: 'Java', level: 'Advanced', certificate: 'https://www.hackerrank.com/certificates/1f2813d049c1' },
-  { name: 'Python', level: 'Intermediate', certificate: null },
-  { name: 'HTML', level: 'Intermediate', certificate: null },
-  { name: 'SCSS', level: 'Basic', certificate: null },
-  { name: 'TypeScript', level: 'Intermediate', certificate: null },
+  const skills = [
+    // Languages
+    { name: 'Java', level: 'Advanced', certificate: 'https://www.hackerrank.com/certificates/1f2813d049c1' },
+    { name: 'Python', level: 'Intermediate', certificate: null },
+    { name: 'HTML', level: 'Intermediate', certificate: null },
+    { name: 'SCSS', level: 'Basic', certificate: null },
+    { name: 'TypeScript', level: 'Intermediate', certificate: null },
 
-  // Frontend
-  { name: 'React.js', level: 'Intermediate', certificate: null },
-  { name: 'Zustand', level: 'Basic', certificate: null },
-  { name: 'Tailwind CSS', level: 'Intermediate', certificate: null },
+    // Frontend
+    { name: 'React.js', level: 'Intermediate', certificate: null },
+    { name: 'Zustand', level: 'Basic', certificate: null },
+    { name: 'Tailwind CSS', level: 'Intermediate', certificate: null },
 
-  // Backend
-  { name: 'Spring Boot', level: 'Intermediate', certificate: null },
-  { name: 'Spring Security', level: 'Intermediate', certificate: null },
-  { name: 'Spring Data JPA', level: 'Intermediate', certificate: null },
-  { name: 'Resilience4j', level: 'Basic', certificate: null },
-  { name: 'Kafka', level: 'Basic', certificate: null },
-  { name: 'RabbitMQ', level: 'Basic', certificate: null },
-  { name: 'Redis', level: 'Basic', certificate: null },
-  { name: 'Prometheus', level: 'Basic', certificate: null },
-  { name: 'Spring Cloud - Eureka', level: 'Basic', certificate: null },
-  { name: 'Spring Cloud - Config', level: 'Basic', certificate: null },
-  { name: 'Spring Cloud - Gateway', level: 'Basic', certificate: null },
+    // Backend
+    { name: 'Spring Boot', level: 'Intermediate', certificate: null },
+    { name: 'Spring Security', level: 'Intermediate', certificate: null },
+    { name: 'Spring Data JPA', level: 'Intermediate', certificate: null },
+    { name: 'Resilience4j', level: 'Basic', certificate: null },
+    { name: 'Kafka', level: 'Basic', certificate: null },
+    { name: 'RabbitMQ', level: 'Basic', certificate: null },
+    { name: 'Redis', level: 'Basic', certificate: null },
+    { name: 'Prometheus', level: 'Basic', certificate: null },
+    { name: 'Spring Cloud - Eureka', level: 'Basic', certificate: null },
+    { name: 'Spring Cloud - Config', level: 'Basic', certificate: null },
+    { name: 'Spring Cloud - Gateway', level: 'Basic', certificate: null },
 
-  // AI Integration
-  { name: 'LangChain4J', level: 'Basic', certificate: null },
+    // AI Integration
+    { name: 'LangChain4J', level: 'Basic', certificate: null },
 
-  // Database
-  { name: 'MongoDB', level: 'Intermediate', certificate: null },
-  { name: 'MySQL', level: 'Intermediate', certificate: null },
+    // Database
+    { name: 'MongoDB', level: 'Intermediate', certificate: null },
+    { name: 'MySQL', level: 'Intermediate', certificate: null },
 
-  // Tools & Services
-  { name: 'VS Code', level: 'Intermediate', certificate: null },
-  { name: 'IntelliJ', level: 'Intermediate', certificate: null },
-  { name: 'Vercel', level: 'Basic', certificate: null },
-  { name: 'Railway', level: 'Basic', certificate: null },
-  { name: 'Groq', level: 'Basic', certificate: null },
-  { name: 'Firebase', level: 'Basic', certificate: null }
-];
+    // Tools & Services
+    { name: 'VS Code', level: 'Intermediate', certificate: null },
+    { name: 'IntelliJ', level: 'Intermediate', certificate: null },
+    { name: 'Vercel', level: 'Basic', certificate: null },
+    { name: 'Railway', level: 'Basic', certificate: null },
+    { name: 'Groq', level: 'Basic', certificate: null },
+    { name: 'Firebase', level: 'Basic', certificate: null }
+  ];
 
 
 
@@ -65,7 +67,7 @@ const SkillsSection = () => {
   };
 
   const concepts = [
-     'OOPs', 'DSA', 'System Design', 'Microservices', 'Responsive Design'
+    'OOPs', 'DSA', 'System Design', 'Microservices', 'Responsive Design'
   ];
 
   return (
@@ -94,7 +96,7 @@ const SkillsSection = () => {
                             {skill.level}
                           </span>
                         </div>
-                        
+
                         {skill.certificate ? (
                           <button
                             onClick={(e) => {
@@ -114,9 +116,9 @@ const SkillsSection = () => {
                       </div>
                     </div>
                   )}
-                  
+
                   <span className="text-gray-300 text-sm font-medium">{skill.name}</span>
-                  
+
                   {/* Expanded details */}
                 </div>
               ))}

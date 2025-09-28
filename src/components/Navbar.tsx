@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState, useEffect } from 'react';
 import { Home, User, Code, GraduationCap, Award, Briefcase, Languages, Mail } from 'lucide-react';
 
@@ -69,8 +71,8 @@ const Navbar = () => {
                                     key={item.id}
                                     onClick={() => scrollToSection(item.id)}
                                     className={`relative group flex items-center justify-center p-2 rounded-full transition-all duration-300 flex-shrink-0 ${isActive
-                                            ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg'
-                                            : 'text-gray-400 hover:text-white hover:bg-gray-800/50'
+                                        ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg'
+                                        : 'text-gray-400 hover:text-white hover:bg-gray-800/50'
                                         }`}
                                     title={item.label}
                                 >
@@ -91,8 +93,8 @@ const Navbar = () => {
                                     key={item.id}
                                     onClick={() => scrollToSection(item.id)}
                                     className={`relative group flex items-center gap-2 px-2 lg:px-3 py-2 rounded-full transition-all duration-300 ${isActive
-                                            ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg'
-                                            : 'text-gray-400 hover:text-white hover:bg-gray-800/50'
+                                        ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg'
+                                        : 'text-gray-400 hover:text-white hover:bg-gray-800/50'
                                         }`}
                                     title={item.label}
                                 >

@@ -1,4 +1,6 @@
 
+'use client';
+
 import React from 'react';
 import { Github, Linkedin, Mail, Instagram } from 'lucide-react';
 import RippleButton from './RippleButton';
@@ -37,11 +39,11 @@ const ContactSection = () => {
         <h2 className="text-4xl font-bold mb-8 bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
           Let's Connect
         </h2>
-        
+
         <p className="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
           I'm always open to discussing new opportunities, innovative projects, or just having a chat about technology.
         </p>
-        
+
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
           {contacts.map((contact, index) => (
             <a
@@ -58,7 +60,7 @@ const ContactSection = () => {
             </a>
           ))}
         </div>
-        
+
         <RippleButton className="px-8 py-4 rounded-full text-lg font-semibold">
           Get In Touch
         </RippleButton>

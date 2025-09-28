@@ -1,15 +1,13 @@
 
+'use client';
+
 import React, { useState, useEffect } from 'react';
 import { ArrowDown, Github, Instagram, Linkedin, Mail } from 'lucide-react';
 
 const Header = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
-  const [displayedText, setDisplayedText] = useState('');
-  const [isTyping, setIsTyping] = useState(true);
 
   const images = ['pfp-1.jpg', 'pfp-2.jpg'];
-  const roles = ['Backend Developer', 'GenAI Developer', 'Android Developer', 'Frontend Developer'];
 
   // Image switching effect
   useEffect(() => {
@@ -18,38 +16,7 @@ const Header = () => {
     }, 7000); // Switch every 7 seconds
 
     return () => clearInterval(imageInterval);
-  }, []);
-
-  // Typing effect
-  useEffect(() => {
-    const currentRole = roles[currentRoleIndex];
-    let timeoutId: NodeJS.Timeout;
-
-    if (isTyping) {
-      if (displayedText.length < currentRole.length) {
-        timeoutId = setTimeout(() => {
-          setDisplayedText(currentRole.slice(0, displayedText.length + 1));
-        }, 100);
-      } else {
-        // Finished typing, wait before starting to delete
-        timeoutId = setTimeout(() => {
-          setIsTyping(false);
-        }, 2000);
-      }
-    } else {
-      if (displayedText.length > 0) {
-        timeoutId = setTimeout(() => {
-          setDisplayedText(displayedText.slice(0, -1));
-        }, 50);
-      } else {
-        // Finished deleting, move to next role
-        setCurrentRoleIndex((prev) => (prev + 1) % roles.length);
-        setIsTyping(true);
-      }
-    }
-
-    return () => clearTimeout(timeoutId);
-  }, [displayedText, isTyping, currentRoleIndex, roles]);
+  }, [images.length]);
 
   return (
     <header className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gray-900/50">
@@ -67,9 +34,8 @@ const Header = () => {
             Aman Verma
           </h1>
 
-          <p className="text-2xl md:text-3xl text-gray-300 mb-6 font-light h-10 flex items-center justify-center">
-            {displayedText}
-            <span className="ml-1 animate-pulse">|</span>
+          <p className="text-2xl md:text-3xl text-gray-300 mb-6 font-light">
+            Backend Developer
           </p>
 
           <blockquote className="text-lg md:text-xl text-gray-400 italic mb-8 max-w-2xl mx-auto">
@@ -78,7 +44,7 @@ const Header = () => {
 
           <div className="flex flex-wrap gap-4 justify-center mb-8">
             <a
-              href="https://drive.google.com/file/d/1upe3i49tvmwCaJIuQwHTw5EupwIiXAnW/view?usp=sharing"
+              href="https://drive.google.com/file/d/1lTXt7r9ERuS_eraVAyQtcwDgN-dlwozX/view?usp=drive_link"
               target="_blank"
               className="inline-flex items-center px-8 py-3 rounded-full font-semibold bg-blue-600 hover:bg-blue-700 text-white transition-colors duration-200"
             >

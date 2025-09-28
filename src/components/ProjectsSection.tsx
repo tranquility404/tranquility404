@@ -1,6 +1,8 @@
 
+'use client';
+
 import React, { useState, useRef } from 'react';
-import { Github, ChevronLeft, ChevronRight } from 'lucide-react';
+import { ExternalLink, ChevronLeft, ChevronRight } from 'lucide-react';
 import RippleButton from './RippleButton';
 
 const ProjectsSection = () => {
@@ -28,13 +30,15 @@ const ProjectsSection = () => {
         title: "SpeakSmart",
         description: "Multilingual speech training platform using LLaMA 3, Librosa, and Murph AI with live feedback, gamified sessions, and smart analysis tools.",
         tech: ["Python", "Librosa", "React.js", "FastAPI", "LLaMA 3", "WebSocket"],
-        image: "speak-smart.png"
+        image: "speak-smart.png",
+        link: "https://www.speak-smart.app/?install=true" // Add your deployed project URL here
       },
       {
         title: "AI Ebook Reader",
         description: "Microservice-based ebook learning platform with smart quizzes, summaries, a custom reader, and progress tracking for .epub files.",
         tech: ["React.js", "Spring Boot", "FastAPI", "MongoDB", "LLaMA 3", "Microservices"],
-        image: "ai-ebook-reader.png"
+        image: "ai-ebook-reader.png",
+        link: "https://ai-ebook-reader.vercel.app" // Add your deployed project URL here
       }
     ],
     fullstack: [
@@ -42,19 +46,22 @@ const ProjectsSection = () => {
         title: "Online Library",
         description: "An all-in-one reading platform with quizzes, AI chatbot guidance, and secure access to community-shared books. Built for students and bookworms seeking a smarter way to read and retain.",
         tech: ["React", "TailwindCSS", "Express.js", "MongoDB", "Google Cloud", "JWT", "Bcrypt"],
-        image: "online-library.png"
+        image: "online-library.png",
+        link: "https://online-library-livid.vercel.app" // Add your deployed project URL here
       },
       {
         title: "PG Management System",
         description: "Role-based accommodation booking platform with dedicated views for Admins, PG Owners, and Users.",
         tech: ["React.js", "Spring Boot", "MongoDB", "Spring Security"],
-        image: "pg-management.png"
+        image: "pg-management.png",
+        link: "https://pg-management-tranquil.vercel.app" // Add your deployed project URL here
       },
       {
         title: "College ERP Clone",
         description: "A reverse-engineered ERP system that bypasses college CAPTCHA, logs in the user, scrapes academic data, and presents it in a modern, user-friendly UI. Built using a microservices architecture.",
         tech: ["React", "Spring Boot", "Flask", "Tesseract OCR", "Microservices", "Web Scraping"],
-        image: "erp-clone.png"
+        image: "erp-clone.png",
+        link: "#" // Add your deployed project URL here
       }
     ],
     frontend: [
@@ -62,37 +69,43 @@ const ProjectsSection = () => {
         title: "Team LaniakeaBorn",
         description: "Hackathon team introduction website showcasing our projects, vision, and tech stack. Designed in Canva, built with React.",
         tech: ["React.js", "Canva"],
-        image: "team-laniakeaborn.png"
+        image: "team-laniakeaborn.png",
+        link: "https://team-laniakeaborn.vercel.app" // Add your deployed project URL here
       },
       {
         title: "StudyPlanner",
         description: "A smart timetable generator built for the AKTU AI Hackathon. Helps students manage time effectively with GenAI assistance.",
         tech: ["React.js", "GenAI"],
-        image: "study-planner.png"
+        image: "study-planner.png",
+        link: "#" // Add your deployed project URL here
       },
       {
         title: "Sorting Visualizer",
         description: "Interactive visualizer that demonstrates sorting algorithms in real-time. Users can modify arrays and observe the step-by-step logic.",
         tech: ["React.js", "DSA"],
-        image: "sorting-visual.png"
+        image: "sorting-visual.png",
+        link: "https://sorting-visualizer-tranquil.vercel.app" // Add your deployed project URL here
       },
       {
         title: "Old Portfolio",
         description: "My initial developer portfolio site built to showcase Android projects. Built with React and styled using SCSS.",
         tech: ["React.js", "SCSS"],
-        image: "android-dev-portfolio.png"
+        image: "android-dev-portfolio.png",
+        link: "https://android-dev404.netlify.app" // Add your deployed project URL here
       },
       {
         title: "Ebook Reader",
         description: "A simple React UI prototype for reading eBooks, enhanced with AI tools for future integration like summarization and quiz generation.",
         tech: ["React.js", "AI Tools"],
-        image: "ebook-frontend.png"
+        image: "ebook-frontend.png",
+        link: "https://ebook-reader-tranquil.vercel.app" // Add your deployed project URL here
       },
       {
         title: "FoodCart",
         description: "Frontend Mentor challenge implementation of a food cart UI. Responsive and clean layout built with React.js.",
         tech: ["React.js"],
-        image: "food-cart.png"
+        image: "food-cart.png",
+        link: "https://food-list-with-cart.vercel.app" // Add your deployed project URL here
       }
     ],
     "androidApps": [
@@ -100,19 +113,22 @@ const ProjectsSection = () => {
         title: "MCQ Quiz",
         description: "An Android quiz app with Google login, user profiles, leaderboards, bookmarking, and test history. Uses Firebase for auth and Firestore for real-time data handling.",
         tech: ["Java", "XML", "Android SDK", "Firebase Auth", "Firestore", "Google Sign-In"],
-        image: "mcq-quiz.png"
+        image: "mcq-quiz.png",
+        link: "#" // Add your deployed project URL here
       },
       {
         title: "Android Icons",
         description: "A utility app that replicates Android Studio's icon generator. Allows users to generate and edit adaptive icons directly on their Android device.",
         tech: ["Java", "XML", "Android SDK"],
-        image: "android-icons.jpg"
+        image: "android-icons.jpg",
+        link: "#" // Add your deployed project URL here
       },
       {
         title: "PopcornTime",
         description: "A movie suggestion app powered by the TMDB API. Users can discover popular, trending, and top-rated films with a smooth native UI.",
         tech: ["Java", "XML", "Android SDK", "TMDB API"],
-        image: "popcorn-time.jpg"
+        image: "popcorn-time.jpg",
+        link: "#" // Add your deployed project URL here
       }
     ]
   };
@@ -163,8 +179,8 @@ const ProjectsSection = () => {
                     key={tab.id}
                     onClick={() => setActiveTab(tab.id)}
                     className={`px-4 sm:px-6 py-2 sm:py-3 rounded-md font-medium transition-all duration-300 whitespace-nowrap flex-shrink-0 text-sm sm:text-base ${activeTab === tab.id
-                        ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white'
-                        : 'text-gray-400 hover:text-white'
+                      ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white'
+                      : 'text-gray-400 hover:text-white'
                       }`}
                   >
                     {tab.label}
@@ -228,10 +244,17 @@ const ProjectsSection = () => {
                   ))}
                 </div>
 
-                <RippleButton variant="secondary" className="flex items-center gap-2 px-4 py-2 rounded-lg">
-                  <Github className="w-4 h-4" />
-                  View Code
-                </RippleButton>
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block"
+                >
+                  <RippleButton variant="secondary" className="flex items-center gap-2 px-4 py-2 rounded-lg">
+                    <ExternalLink className="w-4 h-4" />
+                    Project Link
+                  </RippleButton>
+                </a>
               </div>
             </div>
           ))}
