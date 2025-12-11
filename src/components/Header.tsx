@@ -7,7 +7,7 @@ import { ArrowDown, Github, Instagram, Linkedin, Mail } from 'lucide-react';
 const Header = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  const images = ['pfp-1.jpg', 'pfp-2.jpg'];
+  const images = ['pfp-1.jpg', 'pfp-2.jpg', 'pfp-3.jpg'];
 
   // Image switching effect
   useEffect(() => {
@@ -44,7 +44,7 @@ const Header = () => {
 
           <div className="flex flex-wrap gap-4 justify-center mb-8">
             <a
-              href="https://drive.google.com/file/d/1eqb6vFsGCze1m19dtpqVcV7DnZLESflN/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1DeD_oUOzgLoiSe8ac3KgB_qBVW-itozC/view?usp=sharing"
               target="_blank"
               className="inline-flex items-center px-8 py-3 rounded-full font-semibold bg-blue-600 hover:bg-blue-700 text-white transition-colors duration-200"
             >

@@ -39,6 +39,13 @@ const ProjectsSection = () => {
         tech: ["React.js", "Spring Boot", "FastAPI", "MongoDB", "LLaMA 3", "Microservices"],
         image: "ai-ebook-reader.png",
         link: "https://ai-ebook-reader.vercel.app" // Add your deployed project URL here
+      },
+      {
+        title: "GatePass Scanner",
+        description: "A backend-driven entry verification and tracking system designed for college events, enabling real-time gate pass validation and automated logging of participant entries and goodies distribution.",
+        tech: ["Java", "Spring Boot", "MongoDB", "React.js"],
+        image: "gatepass-scanner.png",
+        link: "https://pass-scanner-one.vercel.app"
       }
     ],
     fullstack: [
