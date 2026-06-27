@@ -4,51 +4,77 @@
 import React, { useState } from 'react';
 
 const SkillsSection = () => {
-  const [selectedSkill, setSelectedSkill] = useState<number | null>(null);
-  const skills = [
-    // Languages
-    { name: 'Java', level: 'Advanced', certificate: 'https://www.hackerrank.com/certificates/1f2813d049c1' },
-    { name: 'Python', level: 'Intermediate', certificate: null },
-    { name: 'HTML', level: 'Intermediate', certificate: null },
-    { name: 'SCSS', level: 'Basic', certificate: null },
-    { name: 'TypeScript', level: 'Intermediate', certificate: null },
-
-    // Frontend
-    { name: 'React.js', level: 'Intermediate', certificate: null },
-    { name: 'Zustand', level: 'Basic', certificate: null },
-    { name: 'Tailwind CSS', level: 'Intermediate', certificate: null },
-
-    // Backend
-    { name: 'Spring Boot', level: 'Intermediate', certificate: null },
-    { name: 'Spring Security', level: 'Intermediate', certificate: null },
-    { name: 'Spring Data JPA', level: 'Intermediate', certificate: null },
-    { name: 'Resilience4j', level: 'Basic', certificate: null },
-    { name: 'Kafka', level: 'Basic', certificate: null },
-    { name: 'RabbitMQ', level: 'Basic', certificate: null },
-    { name: 'Redis', level: 'Basic', certificate: null },
-    { name: 'Prometheus', level: 'Basic', certificate: null },
-    { name: 'Grafana', level: 'Basic', certificate: null },
-    { name: 'Spring Cloud - Eureka', level: 'Basic', certificate: null },
-    { name: 'Spring Cloud - Config', level: 'Basic', certificate: null },
-    { name: 'Spring Cloud - Gateway', level: 'Basic', certificate: null },
-
-    // AI Integration
-    { name: 'LangChain4J', level: 'Basic', certificate: null },
-
-    // Database
-    { name: 'MongoDB', level: 'Intermediate', certificate: null },
-    { name: 'MySQL', level: 'Intermediate', certificate: null },
-
-    // Tools & Services
-    { name: 'VS Code', level: 'Intermediate', certificate: null },
-    { name: 'IntelliJ', level: 'Intermediate', certificate: null },
-    { name: 'Vercel', level: 'Basic', certificate: null },
-    { name: 'Railway', level: 'Basic', certificate: null },
-    { name: 'Groq', level: 'Basic', certificate: null },
-    { name: 'Firebase', level: 'Basic', certificate: null }
+  const [selectedSkill, setSelectedSkill] = useState<string | null>(null);
+  
+  const skillCategories = [
+    {
+      category: 'Languages',
+      skills: [
+        { name: 'Java', level: 'Advanced', certificate: 'https://www.hackerrank.com/certificates/1f2813d049c1' },
+        { name: 'Python', level: 'Intermediate', certificate: null },
+        { name: 'JavaScript', level: 'Intermediate', certificate: null },
+        { name: 'HTML', level: 'Intermediate', certificate: null },
+        { name: 'CSS', level: 'Intermediate', certificate: null }
+      ]
+    },
+    {
+      category: 'Frameworks & AI',
+      skills: [
+        { name: 'Spring Boot', level: 'Intermediate', certificate: null },
+        { name: 'Spring Security', level: 'Intermediate', certificate: null },
+        { name: 'Spring Data JPA', level: 'Intermediate', certificate: null },
+        { name: 'React.js', level: 'Intermediate', certificate: null },
+        { name: 'LangChain4J', level: 'Basic', certificate: null },
+        { name: 'CrewAI', level: 'Basic', certificate: null }
+      ]
+    },
+    {
+      category: 'Messaging & Caching',
+      skills: [
+        { name: 'Kafka', level: 'Basic', certificate: null },
+        { name: 'RabbitMQ', level: 'Basic', certificate: null },
+        { name: 'Redis', level: 'Basic', certificate: null },
+        { name: 'WebSockets', level: 'Basic', certificate: null }
+      ]
+    },
+    {
+      category: 'Databases',
+      skills: [
+        { name: 'MongoDB', level: 'Intermediate', certificate: null },
+        { name: 'MySQL', level: 'Intermediate', certificate: null },
+        { name: 'ChromaDB', level: 'Basic', certificate: null }
+      ]
+    },
+    {
+      category: 'DevOps & Observability',
+      skills: [
+        { name: 'Docker', level: 'Basic', certificate: null },
+        { name: 'GitHub Actions', level: 'Basic', certificate: null },
+        { name: 'OpenTelemetry', level: 'Basic', certificate: null },
+        { name: 'Prometheus', level: 'Basic', certificate: null },
+        { name: 'Grafana', level: 'Basic', certificate: null },
+        { name: 'Loki', level: 'Basic', certificate: null }
+      ]
+    },
+    {
+      category: 'Cloud & Tools',
+      skills: [
+        { name: 'Google Cloud', level: 'Basic', certificate: null },
+        { name: 'Microsoft Azure', level: 'Basic', certificate: null },
+        { name: 'Heroku', level: 'Basic', certificate: null },
+        { name: 'Vercel', level: 'Basic', certificate: null },
+        { name: 'n8n', level: 'Basic', certificate: null },
+        { name: 'Git', level: 'Intermediate', certificate: null },
+        { name: 'GitHub', level: 'Intermediate', certificate: null },
+        { name: 'Postman', level: 'Intermediate', certificate: null },
+        { name: 'IntelliJ', level: 'Intermediate', certificate: null },
+        { name: 'VS Code', level: 'Intermediate', certificate: null }
+      ]
+    }
   ];
 
-
+  // Flatten skills for display
+  const allSkills = skillCategories.flatMap(cat => cat.skills);
 
   const getLevelBadge = (level: string) => {
     switch (level) {
@@ -68,7 +94,11 @@ const SkillsSection = () => {
   };
 
   const concepts = [
-    'Object Oriented Programming', 'Data Structures and Algorithms', 'System Design', 'Microservices Architecture', 'Responsive Design'
+    'Microservices Architecture',
+    'RESTful APIs',
+    'System Design',
+    'DSA',
+    'Event-Driven Architecture'
   ];
 
   return (
@@ -82,13 +112,13 @@ const SkillsSection = () => {
             </h2>
 
             <div className="flex flex-wrap gap-3">
-              {skills.map((skill, index) => (
+              {allSkills.map((skill, index) => (
                 <div
                   key={index}
-                  onClick={() => setSelectedSkill(selectedSkill === index ? null : index)}
+                  onClick={() => setSelectedSkill(selectedSkill === index.toString() ? null : index.toString())}
                   className="relative bg-gray-800/30 backdrop-blur-sm rounded-full px-4 py-2 border border-gray-700/50 hover:border-blue-500/50 transition-all duration-300 cursor-pointer hover:scale-105"
                 >
-                  {selectedSkill === index && (
+                  {selectedSkill === index.toString() && (
                     <div className="absolute z-10 bottom-full left-0 mb-2 bg-gray-900/95 backdrop-blur-sm rounded-lg p-4 border border-gray-600 shadow-xl min-w-64">
                       <div className="flex flex-col gap-3">
                         <div className="flex items-center justify-between">
@@ -119,8 +149,6 @@ const SkillsSection = () => {
                   )}
 
                   <span className="text-gray-300 text-sm font-medium">{skill.name}</span>
-
-                  {/* Expanded details */}
                 </div>
               ))}
             </div>

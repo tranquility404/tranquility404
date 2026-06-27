@@ -11,19 +11,19 @@ const AboutSection = () => {
 
         <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700">
           <p className="text-lg text-gray-300 leading-relaxed mb-6">
-            I'm a Backend Developer who thrives on turning fragile, duct taped MVPs into clean, scalable, and production grade systems. I specialize in building reliable APIs, streamlining data flows, and architecting backend infrastructures that can handle real world scale, performance demands, and future growth.
+            I'm an AI Product Engineer who enjoys sitting at the intersection of operations, product, and engineering. 
           </p>
 
           <p className="text-lg text-gray-300 leading-relaxed mb-6">
-            My work doesn’t stop at the backend. With hands on experience in frontend development and generative AI, I understand the full product lifecycle, enabling me to integrate intelligent features that enhance usability and user experience across the stack.
+            I work closely with teams to understand workflows, identify bottlenecks, and build AI-powered solutions that automate manual tasks, improve productivity, reduce costs, and drive business growth.
           </p>
 
           <p className="text-lg text-gray-300 leading-relaxed mb-6">
-            I value clean code, thoughtful abstractions, and systems that don’t just function; they endure. Whether you're struggling with scaling pains, performance bottlenecks, or simply need someone to bring technical stability to your product, I focus on building solutions that are as elegant as they are effective.
+            I specialize in building production-grade AI systems, intelligent automations, and scalable backend infrastructure that solve real business problems, not just technical ones.
           </p>
 
           <p className="text-lg text-gray-300 leading-relaxed">
-            You bring the idea, I’ll engineer the system that brings it to life and keeps it running long after launch.
+            You bring the workflow. I'll engineer the AI system that transforms it.
           </p>
         </div>
       </div>

@@ -35,11 +35,11 @@ const Header = () => {
           </h1>
 
           <p className="text-2xl md:text-3xl text-gray-300 mb-6 font-light">
-            Backend Developer
+            AI Product Engineer
           </p>
 
           <blockquote className="text-lg md:text-xl text-gray-400 italic mb-8 max-w-2xl mx-auto">
-            "If you think good architecture is expensive, try bad architecture."
+            "There is nothing so useless as doing efficiently that which should not be done at all."
           </blockquote>
 
           <div className="flex flex-wrap gap-4 justify-center mb-8">

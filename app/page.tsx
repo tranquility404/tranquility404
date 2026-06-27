@@ -4,6 +4,7 @@ import ScrollProgress from '@/components/ScrollProgress';
 import Header from '@/components/Header';
 import AboutSection from '@/components/AboutSection';
 import SkillsSection from '@/components/SkillsSection';
+import ExperienceSection from '@/components/ExperienceSection';
 import EducationSection from '@/components/EducationSection';
 import AwardsSection from '@/components/AwardsSection';
 import ProjectsSection from '@/components/ProjectsSection';
@@ -31,11 +32,11 @@ export default function Home() {
                     <AboutSection />
                 </div>
 
-                <RippleWrapper>
-                    <div id="skills">
-                        <SkillsSection />
-                    </div>
-                </RippleWrapper>
+                <div id="experience">
+                    <ExperienceSection />
+                </div>
+
+
 
                 <div id="education">
                     <EducationSection />
@@ -51,6 +52,12 @@ export default function Home() {
                     </div>
                 </RippleWrapper>
 
+                <RippleWrapper>
+                    <div id="skills">
+                        <SkillsSection />
+                    </div>
+                </RippleWrapper>
+                
                 <div id="languages">
                     <LanguagesSection />
                 </div>

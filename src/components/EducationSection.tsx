@@ -20,10 +20,13 @@ const EducationSection = () => {
   ];
 
   const achievements = [
-    "3x Hackathon Winner",
-    "Ranked top 5% out of 7000+ participants in CodeClash 2025.",
-    "Open Source Contributor",
-    "Worked on 10+ Freelance projects"
+    "Institute Topper (ICPC)",
+    "Ranked in the Top 5% among 7,000+ participants in CodeClash 2025",
+    "Solved 500+ DSA problems across LeetCode, Codeforces, GeeksforGeeks, and HackerRank",
+    "Secured 1st Place at HackBlitz 2025 (200+ teams)",
+    "Won the Best Innovative Team Award at GIH 2.0 (2,000+ participants)",
+    "Led, mentored, and organized one of the largest hackathons ever hosted on campus, bringing together 700+ participants from across India and driving the entire event end-to-end as the Event Lead",
+    "Led a senior team, guiding collaboration and successfully delivering scalable projects under tight deadlines"
   ];
 
   return (

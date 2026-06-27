@@ -9,10 +9,11 @@ const Navbar = () => {
     const navItems = [
         { id: 'header', label: 'Home', icon: Home },
         { id: 'about', label: 'About', icon: User },
-        { id: 'skills', label: 'Skills', icon: Code },
+        { id: 'experience', label: 'Experience', icon: Briefcase },
         { id: 'education', label: 'Education', icon: GraduationCap },
         { id: 'awards', label: 'Awards', icon: Award },
         { id: 'projects', label: 'Projects', icon: Briefcase },
+        { id: 'skills', label: 'Skills', icon: Code },
         { id: 'languages', label: 'Languages', icon: Languages },
         { id: 'contact', label: 'Contact', icon: Mail },
     ];
@@ -21,8 +22,9 @@ const Navbar = () => {
     const mobileNavItems = [
         { id: 'header', label: 'Home', icon: Home },
         { id: 'about', label: 'About', icon: User },
-        { id: 'skills', label: 'Skills', icon: Code },
+        { id: 'experience', label: 'Experience', icon: Briefcase },
         { id: 'projects', label: 'Projects', icon: Briefcase },
+        { id: 'skills', label: 'Skills', icon: Code },
         { id: 'contact', label: 'Contact', icon: Mail },
     ];
 
