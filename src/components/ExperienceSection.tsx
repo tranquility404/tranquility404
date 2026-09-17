@@ -4,13 +4,13 @@ const ExperienceSection = () => {
   const companies = [
     {
       name: "Micro1",
-      duration: "6 mos",
+      duration: "10 mos",
       location: "Remote",
       roles: [
         {
           position: "Human Data Manager",
           type: "Full-time",
-          period: "Feb 2026 - June 2026 · 5 months",
+          period: "Feb 2026 - Sept 2026 · 8 months",
           responsibilities: [
             "Built & deployed a full-stack workflow platform (React + Spring Boot) for a pilot AI pipeline, integrating and customizing an open-source annotation tool into a centralized system used by annotation teams, SPLs, and ASPLs",
             "Designed a job-based async processing system with Redis caching, improving throughput for high-volume annotation workloads.",
@@ -26,6 +26,21 @@ const ExperienceSection = () => {
           period: "Jan 2026 - Feb 2026 · 2 months",
           responsibilities: [
             "Performed QC for an AI data pipeline, validating human-recorded data, flagging fraud cases, and enforcing project guidelines"
+          ]
+        }
+      ]
+    },
+    {
+      name: "Freelance",
+      duration: "1 yr 4 mos",
+      location: "Remote",
+      roles: [
+        {
+          position: "Self-employed",
+          type: "Freelance",
+          period: "Jan 2023 - Apr 2024",
+          responsibilities: [
+            "Reached out to prospective clients through cold email campaigns, secured freelance opportunities, and built and delivered software projects for multiple clients"
           ]
         }
       ]

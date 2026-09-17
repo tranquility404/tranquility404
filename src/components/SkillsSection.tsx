@@ -24,8 +24,7 @@ const SkillsSection = () => {
         { name: 'Spring Security', level: 'Intermediate', certificate: null },
         { name: 'Spring Data JPA', level: 'Intermediate', certificate: null },
         { name: 'React.js', level: 'Intermediate', certificate: null },
-        { name: 'LangChain4J', level: 'Basic', certificate: null },
-        { name: 'CrewAI', level: 'Basic', certificate: null }
+        { name: 'Spring AI', level: 'Intermediate', certificate: null }
       ]
     },
     {
@@ -41,8 +40,7 @@ const SkillsSection = () => {
       category: 'Databases',
       skills: [
         { name: 'MongoDB', level: 'Intermediate', certificate: null },
-        { name: 'MySQL', level: 'Intermediate', certificate: null },
-        { name: 'ChromaDB', level: 'Basic', certificate: null }
+        { name: 'PostgreSQL', level: 'Intermediate', certificate: null }
       ]
     },
     {
